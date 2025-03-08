@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiệp Chúc Mừng 8/3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Lời chúc chung -->
+        <h1>Chúc Mừng Ngày 8/3!</h1>
+        <p class="greeting">Chúc các bác, các mẹ một ngày 8/3 thật hạnh phúc, rạng rỡ và ngập tràn yêu thương!</p>
+
+        <!-- Danh sách card -->
+        <div class="card-list">
+            <div class="card" onclick="showMessage('Bác Loan', 'Nhân ngày Quốc tế Phụ nữ 8/3, con xin kính chúc Bác luôn mạnh khỏe, vui vẻ và hạnh phúc bên gia đình. Chúc Bác luôn giữ được tinh thần lạc quan, tràn đầy năng lượng và niềm vui trong cuộc sống. Cảm ơn Bác vì những yêu thương và sự quan tâm dành cho mọi người xung quanh! Chúc Bác một ngày 8/3 thật ý nghĩa!')">
+                <img src="assets\Bác_Loan.jpg" alt="Bác Loan">
+                <p>Bác Loan</p>
+            </div>
+            <div class="card" onclick="showMessage('Bác Phượng', 'Nhân ngày Quốc tế Phụ nữ 8/3, con xin kính chúc Bác luôn mạnh khỏe, hạnh phúc và tràn đầy niềm vui. Mong rằng mỗi ngày của Bác đều ngập tràn yêu thương, bình an và những điều tốt đẹp nhất. Cảm ơn Bác vì luôn là một người phụ nữ tuyệt vời! Chúc Bác một ngày 8/3 thật ý nghĩa và vui vẻ!')">
+                <img src="assets\Bác_Phượng.jpg" alt="Bác Phượng">
+                <p>Bác Phượng</p>
+            </div>
+            <div class="card" onclick="showMessage('Mẹ', 'Nhân ngày 8/3, con muốn gửi đến mẹ những lời chúc yêu thương nhất. Mẹ không chỉ là người phụ nữ tuyệt vời của gia đình mà còn là một người giáo viên tận tâm, luôn mang tri thức và tình yêu thương đến bao thế hệ học trò. Con chúc mẹ luôn mạnh khỏe, hạnh phúc và mãi rạng rỡ như những bông hoa đẹp nhất. Cảm ơn mẹ vì đã luôn yêu thương, dạy dỗ con bằng tất cả sự dịu dàng và bao dung. Con yêu mẹ rất nhiều! Chúc mẹ một ngày 8/3 thật trọn vẹn và ý nghĩa! ❤️')">
+                <img src="assets\Mẹ.jpg" alt="Mẹ">
+                <p>Mẹ</p>
+            </div>
+            <div class="card" onclick="showMessage('Mẹ Giang', 'Nhân ngày Quốc tế Phụ nữ 8/3, con xin gửi đến mẹ những lời chúc tốt đẹp nhất. Mẹ không chỉ là một người mẹ tuyệt vời mà còn là một người giáo viên đáng kính, luôn tận tâm với học trò và hết lòng vì gia đình. Con chúc mẹ luôn mạnh khỏe, hạnh phúc và tràn đầy niềm vui. Mong rằng mỗi ngày trôi qua với mẹ đều là một ngày rạng rỡ, đầy ắp tiếng cười và yêu thương. Cảm ơn mẹ vì tất cả những gì mẹ đã dành cho con và cho bao thế hệ học trò! Con yêu mẹ rất nhiều! Chúc mẹ một ngày 8/3 ý nghĩa và trọn vẹn! ❤️')">
+                <img src="assets\Mẹ_Giang.jpg" alt="Mẹ Giang">
+                <p>Mẹ Giang</p>
+            </div>
+            <div class="card" onclick="showMessage('Mẹ Quý', 'Nhân ngày Quốc tế Phụ nữ 8/3, con xin gửi đến mẹ những lời chúc tốt đẹp nhất. Con chúc mẹ luôn mạnh khỏe, vui vẻ và hạnh phúc bên gia đình. Cảm ơn mẹ vì những yêu thương, sự hi sinh và những điều tốt đẹp mẹ đã dành cho con. Mong rằng mỗi ngày của mẹ đều tràn ngập niềm vui, bình an và luôn tươi trẻ như những bông hoa rực rỡ nhất. Con yêu mẹ rất nhiều! Chúc mẹ một ngày 8/3 thật ý nghĩa và tràn đầy yêu thương! ❤️')">
+                <img src="assets\Mẹ_Quý.jpg" alt="Mẹ Quý">
+                <p>Mẹ Quý</p>
+            </div>
+        </div>
+        <!-- Dòng chúc các chị -->
+        <p class="greeting sisters">Chúc các chị một ngày 8/3 thật xinh đẹp và hạnh phúc!</p>
+
+        <!-- Danh sách card cho các chị -->
+        <div class="card-list">
+            <div class="card" onclick="showMessage('Chị Dung', 'Nhân ngày 8/3, em chúc chị luôn xinh đẹp, mạnh khỏe, hạnh phúc và thành công trong công việc cũng như cuộc sống. Chúc chị mỗi ngày đều tràn đầy năng lượng, luôn vui vẻ và gặp nhiều may mắn. Mong rằng mọi ước mơ và dự định của chị sẽ sớm thành hiện thực. Chúc chị một ngày 8/3 thật nhiều niềm vui và yêu thương! 💐✨')">
+                <img src="assets\Chị_Dung.jpg" alt="Chị Dung">
+                <p>Chị Dung</p>
+            </div>
+            <div class="card" onclick="showMessage('Chị Hà', 'Nhân ngày 8/3, em chúc chị luôn mạnh khỏe, hạnh phúc và thành công trong sự nghiệp trồng người. Chị không chỉ là một người giáo viên tận tâm mà còn là một người chị dâu tuyệt vời. Mong rằng mỗi ngày của chị đều tràn ngập niềm vui, bình an và yêu thương. Chúc chị một ngày 8/3 thật ý nghĩa, luôn rạng rỡ và gặp nhiều may mắn trong cuộc sống! 💐✨')">
+                <img src="assets\Chị_Hà.jpg" alt="Chị Hà">
+                <p>Chị Hà</p>
+            </div>
+            <div class="card" onclick="showMessage('Chị Linh', 'Nhân ngày 8/3, em chúc chị luôn xinh đẹp, vui vẻ, hạnh phúc và thành công trong mọi lĩnh vực của cuộc sống. Mong rằng mỗi ngày của chị đều tràn đầy năng lượng tích cực và những điều tốt đẹp nhất! Chúc chị một ngày 8/3 thật rạng rỡ và ý nghĩa! 💐✨')">
+                <img src="assets\Chị_Linh.jpg" alt="Chị Linh">
+                <p>Chị Linh</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal (pop-up) cho lời chúc riêng -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeMessage()">&times;</span>
+            <h2 id="modal-name"></h2>
+            <p id="modal-message"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

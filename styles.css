@@ -1,0 +1,156 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ffcccc, #ffe6e6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    height: auto; /* Cho phép trang mở rộng theo nội dung */
+    overflow-y: auto; /* Bật cuộn dọc nếu cần */
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 50px; /* Tạo khoảng trống phía dưới để tránh bị che mất */
+}
+
+h1 {
+    color: #ff4081;
+    font-size: 50px;
+    font-family: 'Great Vibes', cursive;
+}
+
+.greeting {
+    font-size: 22px;
+    color: #444;
+    margin-bottom: 30px;
+}
+
+.card-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ff4081;
+}
+
+.card p {
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #222;
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    width: 350px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.close {
+    color: #666;
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.close:hover {
+    color: #ff4081;
+}
+
+#modal-name {
+    color: #ff4081;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+#modal-message {
+    font-size: 18px;
+    color: #444;
+    line-height: 1.5;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* Hoa rơi */
+@keyframes falling {
+    0% { transform: translateY(-10vh) rotate(0deg); }
+    100% { transform: translateY(100vh) rotate(360deg); }
+}
+
+.flower {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: pink;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: falling linear infinite;
+}
+.falling-flower {
+    position: absolute;
+    top: 0;
+    font-size: 24px;
+    color: #ff69b4; /* Màu hồng */
+    pointer-events: none;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    from {
+        transform: translateY(-10px);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
